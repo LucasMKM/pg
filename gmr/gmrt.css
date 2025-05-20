@@ -3,6 +3,7 @@ section {min-height: 100vh;}
 
 .body {
             background-color: rgb(253, 233, 208);
+            font-family: "Roboto", sans-serif;
         }
 
         .menu{
