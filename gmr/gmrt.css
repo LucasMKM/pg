@@ -146,7 +146,8 @@ a.linkmenu {
 
 .produtos:hover{
 
-    border-color:rgba(141, 13, 30, 0.925)
+    border-color:rgba(141, 13, 30, 0.925);
+    padding:10px
     
 }
 .produtos img{
@@ -186,7 +187,7 @@ a.linkmenu {
 }
 
 .produto1:hover{
-
+  
     padding:10px;
     transition:0.5s;
     background-color: rgb(56, 51, 51);
@@ -196,8 +197,6 @@ a.linkmenu {
     width: 250px;
     height: 390px;
  
-    
-    
 }
 
 .produto1 button{
