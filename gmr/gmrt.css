@@ -285,4 +285,36 @@ gap:50px
     border-radius:20px;
 }
 
+.gfkj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: self-end; 
+  }
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
 
