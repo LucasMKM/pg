@@ -101,21 +101,38 @@
         <section class="gfkj"> 
 
 <div class="container">
-  <div class="form-section">
-    <h2>Preencha o formulário</h2>
+  <div class="formsection">
     <form>
+
+    <legend>Preencha o formulário</legend>
+
+    <fieldset class="formulario">
+
       <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome">
+      <input type="text" id="nome" name="nome"> 
       
       <label for="email">Email:</label>
       <input type="email" id="email" name="email">
+
+      <label for="number">Telefone</label>
+      <input type="tel" id="number" name="telefone">
+
+      <label for="date">Senha</label>
+      <input type="password" id="senha" name="senha">
       
       <button type="submit">Enviar</button>
+
+    </fieldset>
+
     </form>
-  </div>
 
   <div>
-    <img src="https://brasil.perfil.com/wp-content/uploads/2025/03/ronaldinho-gaucho_1742856893710.jpg" alt="Descrição da imagem" class="image">
+    <picture>
+
+        <source media="(width < 650px)" srcset="img/rod.webp">
+        <source media="(width < 1000px)" srcset="img/sundogwug.webp">
+        <img src="img/rod.webp" alt="Descrição da imagem" class="image" loading="lazy"></picture> 
+   </div>
   </div>
 </div>
 
