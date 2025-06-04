@@ -294,27 +294,40 @@ gap:50px
     z-index: 1;
     background-color: rgb(51, 49, 49);
     color: white;
+
 }
 
-.container {
+.formsection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: self-end; 
-  }
-
-.form-section {
-    display: flex;
     flex-direction: column;
+    grid-template-columns: 1fr 1fr;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.formsection { 
+    display: grid;
+          grid-template-columns: 1fr 1fr;
+          
 }
 
 .image {
-    max-width: 100%;
-    height: auto;
+
+    width: 100%;
+    height:auto;
 }
 
+@media (max-width: 768px){ 
+    .formsection { display: grid;
+    grid-template-columns: 1fr ;
+    
+    }
+}
+
+.formulario {
+
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:10px;
+padding:10px
+
+
+}
