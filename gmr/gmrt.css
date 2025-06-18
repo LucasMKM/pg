@@ -303,15 +303,9 @@ gap:50px
     grid-template-columns: 1fr 1fr;
 }
 
-.formsection { 
-    display: grid;
-          grid-template-columns: 1fr 1fr;
-          
-}
-
 .image {
 
-    width: 100%;
+    width: 70%;
     height:auto;
 }
 
@@ -327,7 +321,83 @@ gap:50px
 display:grid;
 grid-template-columns: 1fr 1fr;
 gap:10px;
-padding:10px
+padding:10px;
 
+}
+
+.mosaico {
+
+    display:grid;
+    height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "item1 item2 item2"
+    "item3 item4 item4"
+    "item3 item5 item6";
+    background-position: center;
+    width: 300px;
+    gap:1px;
+    padding:10px
+}
+
+@media (max-width: 780px){
+
+    .mosaico { display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+    
+}
+
+.item1 {
+
+    grid-area: item1;
+    background-image: url("../img/387606_1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.item2 {
+
+    grid-area: item2;
+    background-image: url("../img/906417_1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.item3 {
+
+    grid-area: item3;
+    background-image: url("../img/5813964_1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4{
+
+    grid-area: item4;
+    background-image: url("../img/arroz_pai_jo_o_branco_1kg_064fba35-c139-4f8a-9c48-202782f7f266.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+.item5{
+
+    grid-area: item5;
+    background-image: url("../img/1xg.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.item6{
+
+    grid-area: item6;
+    background-image: url("../img/5813964_1\ \(cópia\).webp");
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
