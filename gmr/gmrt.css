@@ -91,12 +91,10 @@ a.linkmenu {
     align-items: center;
     flex-flow: row wrap;
     padding: 10px;
-    margin-top: 50px;
     background-color: rgb(41, 35, 35);
-    position: relative;
-    top: 40px;
-    left: 0;
-    right: 0;
+    position: fixed;
+    margin-top: -10px;
+    width: 100%;
     z-index:2;
     
 }
@@ -352,16 +350,17 @@ padding:10px;
 .item1 {
 
     grid-area: item1;
-    background-image: url("../img/387606_1.webp");
+    background-image: url("../img/g1.webp");
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
 .item2 {
 
     grid-area: item2;
-    background-image: url("../img/906417_1.webp");
+    background-image: url("../img/g2.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -370,15 +369,15 @@ padding:10px;
 .item3 {
 
     grid-area: item3;
-    background-image: url("../img/5813964_1.webp");
+    background-image: url("../img/g3.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .item4{
 
     grid-area: item4;
-    background-image: url("../img/arroz_pai_jo_o_branco_1kg_064fba35-c139-4f8a-9c48-202782f7f266.png");
+    background-image: url("../img/g4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(255, 255, 255);
@@ -387,17 +386,39 @@ padding:10px;
 .item5{
 
     grid-area: item5;
-    background-image: url("../img/1xg.avif");
+    background-image: url("../img/g5.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
 }
 
 .item6{
 
     grid-area: item6;
-    background-image: url("../img/5813964_1\ \(cópia\).webp");
+    background-image: url("../img/g6.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
+}
+
+.ior{
+
+    background-color: rgb(167, 0, 218);
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 100px;
+    height:100px;
+    animation-name:orl;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+
+}
+
+@keyframes orl {
+
+
+0% {background-color: brown; top:0px; left:0px;}
+15% {background-color:black; top:200px}
+    
 }
