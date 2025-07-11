@@ -410,8 +410,9 @@ padding:10px;
     width: 100px;
     height:100px;
     animation-name:orl;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-fill-mode:both;
+    animation-iteration-count: infinite;
 
 }
 
@@ -419,6 +420,9 @@ padding:10px;
 
 
 0% {background-color: brown; top:0px; left:0px;}
-15% {background-color:black; top:200px}
-    
+15% {background-color:black; top:0px; left:550px; padding:100px ;border-radius:30px; background-color: rgb(255, 51, 0);}
+30% {background-color: rgb(255, 51, 0); top:500px; left:550px; padding:30px ;border-bottom-left-radius:300px; background-color: rgb(255, 51, 0);}
+60% {background-color: rgb(255, 51, 0); top:500px; left:0px; padding:200px ;border-radius:30px; background-color: rgb(255, 51, 0);}
+80% {background-color: rgb(255, 51, 0); top:200px; left:250px; padding:100px ;border-top-left-radius:3000px; background-color: rgb(255, 51, 0);}
+100% {background-color: brown; top:0px; left:0px;}
 }
