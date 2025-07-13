@@ -1,442 +1,382 @@
-section {min-height: 100vh;}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gmr/gmrt.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Loja De Guitarras</title>    
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="body">
+
+    <header class="menu">
+
+                    <img src="img/logo.png" alt="Logo" width="100" height="70">
+
+            <form>
+
+                <input type="text" placeholder="Pesquisar produtos" name="search" id="search">
+    
+            </form>
+
+            <a class=linkmenuc href="https://www.w3schools.com/html/html_links.asp">cadaste-se</a>
+
+             <a class=linkmenu href="https://www.w3schools.com/html/html_links.asp">carrinho</a>
 
 
-.body {
-            background-color: rgb(253, 233, 208);
-            font-family: "Roboto", sans-serif;
-        }
+    </header>
 
-        .menu{
+    <nav class="">
 
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    flex-flow: row wrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
-    z-index: 3;
+        <ul class="navigation">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#sobre_nos">Sobre nós</a></li>
+            <li><a class=nav-item href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 
+    <main>
 
-}
+        <section class="produtos" id="produtos">
 
-a.linkmenuc {
+            <h2 class="prod">produtos</h2>
+
+              <div class="produto1">
+
+                <img class="produtoimg" src="img/guitar.png" alt="Guitarra" >
+                <h2>GUITARRA FENDER® SQUIER® DEBUT STRATOCASTER</h2>
+                <p>Preço: R$ 1000,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                
+                </div>
+
+                <div class="produto1">
+
+                <img class="produtoimg" src="img/guitar1.png" alt="Guitarra">
+                <h2>GUITARRA ESP LTD EC-201 LEC201BLKS - BLACK SATIN</h2>
+                <p>Preço: R$ 2000,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                
+                </div>
+
+                <div class="produto1">
+
+                <img class="produtoimg" src="img/guitar2.png" alt="Guitarra">
+                <h2>GUITARRA PRS SE EXOTIC CUSTOM</h2>
+                <p>Preço: R$ 1500,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                
+                </div>
+                <div class="produto1">
+                <img class="produtoimg" src="img/guitar3.png" alt="Guitarra">
+                <h2>GUITARRA JACKSON RHOADS RRT-5</h2>
+
+                <p>Preço: R$ 2500,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                </div>
+
+                <div class="produto1">
+
+                <img class="produtoimg" src="img/guitar9.png" alt="Guitarra">
+                <h2>Guitarra Les Paul Michael Mx-3 Gold Top Destro Gold Blackwood</h2>
+                <p>Preço: R$ 3000,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                
+                </div>
+
+                <div class="produto1">
+
+                <img class="produtoimg" src="img/guitar11.png" alt="Guitarra">
+
+                <h2>Guitarra Sire H7f Full-hollow</h2>
+                <p>Preço: R$ 2500,00</p>
+                <button class="btn btn-primary">Comprar</button>
+                
+                </div>
+
+                
+                
+        </section>
+        
+        <section class="gfkj"> 
+            
+<div class="container">
+  <div class="formsection">
 
     
-    
 
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 15px;
-    padding:11px;
+    <form>
 
+    <fieldset class="formulario">
 
-}
+      <label for="legen"></label>
+      <legend id="legen" name="legen"> Preencha o formulário </legend> 
 
-.linkmenuc:hover{
-    border: 1px solid white;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome"> 
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
 
-}
+      <label for="number">Telefone</label>
+      <input type="tel" id="number" name="telefone">
 
-a.linkmenu {
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha">
+      
+      <button type="submit">Enviar</button>
 
+    </fieldset>
 
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 15px;
-    padding:11px;
+    </form>
 
+  <div>
+    <picture>
 
-}
+        <source media="(width < 650px)" srcset="img/guitarhero.jpg" >
+        <source media="(width < 1000px)" srcset="img/guitarhero.jpg" loading="lazy">
+        <img src="img/guitarhero.jpg" alt="sunwo" class="image" loading="lazy"></picture> 
+   </div>
+  </div>
+</div>
 
-.linkmenu:hover{
-    border: 1px solid white;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-}
+</section>
 
-.menu input{
+<section class="mosaico1">
 
-    padding:10px;
-    background-color: black;
-    border:1px solid;
-    border-color:rgb(85, 85, 85);
-    border-radius: 50px;
-    
+<div class="mosaico">
 
-}
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+    <div class="item7"></div>
 
-.menu input:focus{
+</div>
 
-    outline:none;
-    border:1px solid rgb(221, 221, 221);
-    background-color: black;
-    color: white;
+</section>
 
-
-}
-
-.navigation{
-
-    display: flex;
-    list-style:none;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 10px;
-    background-color: rgb(41, 35, 35);
-    position: fixed;
-    margin-top: -10px;
-    width: 100%;
-    z-index:2;
-    
-}
-
-.navigation a{
-
-    text-decoration:none;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 10px;
-}
-
-.rodape{
+    <section>
+      
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1px;
-    flex-flow: row wrap;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    align-items: center;
-    font-size: 15px;
-}
-
-.produtos {
-
-    display:flex;
-    position:relative;
-    top: 10px;  
-    flex-flow: row wrap;  
-    z-index:1;
-    justify-content: space-around;
-    align-items:center;
-    gap: 20px;
-    margin-top: 100px;
-    border-top: 10px solid rgb(0, 0, 0);
-    border-radius:4px;
-    transition: 0.5s;
-}
-
-.produtos:hover{
-
-    border-color:rgba(141, 13, 30, 0.925);
-    padding:10px
-    
-}
-.produtos img{
-
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid rgb(107, 68, 68);
-    background-color: rgb(56, 51, 51);
-    
-
-}
-
-.produtos img:hover{
-
-    padding:10px;
-    transition:0.5s;
-
-}
-
-.produto1 {
-
-    width: 230px;
-    height: 380px;
-    color: rgb(17, 13, 13);
-    text-align: center;
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    border: 1px solid rgb(107, 68, 68);
-    border-radius:20px;
-    background-color: rgb(112, 109, 109);
-    box-sizing: border-box;
-    
-}
-
-.produto1:hover{
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/show1.jpg" alt="Los Angeles" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/show2.jpg"  alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/show3.jpg" alt="New York" class="d-block w-100">
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
   
-    padding:10px;
-    transition:0.5s;
-    background-color: rgb(56, 51, 51);
-    color: white;
-    border: 1px solid rgb(107, 68, 68);
-    border-radius:30px;
-    width: 250px;
-    height: 390px;
- 
-}
 
-.produto1 button{
+        <div class="container mt-3">
+            <h2>INFORMAÇÃOS</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>nome</th>
+                  <th>sobrenome</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Default</td>
+                  <td>Defaultson</td>
+                  <td>def@somemail.com</td>
+                </tr>      
+                <tr class="table-primary">
+                  <td>Primary</td>
+                  <td>Joe</td>
+                  <td>joe@example.com</td>
+                </tr>
+                <tr class="table-success">
+                  <td>Success</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr class="table-danger">
+                  <td>Danger</td>
+                  <td>Moe</td>
+                  <td>mary@example.com</td>
+                </tr>
+                <tr class="table-info">
+                  <td>Info</td>
+                  <td>Dooley</td>
+                  <td>july@example.com</td>
+                </tr>
+                <tr class="table-warning">
+                  <td>Warning</td>
+                  <td>Refs</td>
+                  <td>bo@example.com</td>
+                </tr>
+                <tr class="table-active">
+                  <td>Active</td>
+                  <td>Activeson</td>
+                  <td>act@example.com</td>
+                </tr>
+                <tr class="table-secondary">
+                  <td>Secondary</td>
+                  <td>Secondson</td>
+                  <td>sec@example.com</td>
+                </tr>
+                <tr class="table-light">
+                  <td>Light</td>
+                  <td>Angie</td>
+                  <td>angie@example.com</td>
+                </tr>
+                <tr class="table-dark">
+                  <td>Dark</td>
+                  <td>Bo</td>
+                  <td>bo@example.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-    color:rgb(255, 255, 255);
-    background-color: rgb(56, 51, 51);
-    border: 1px solid rgb(2, 2, 2);
-
-}
+        </section>
 
 
-.produto1 h2{
 
-    font-size: 15px;
-    white-space: normal;
-    word-wrap: break-word;
-    width: 60%;
-    margin: 0 auto;
-}
+        <section> 
 
-.sobre{
+            <div class="ior">
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    position: relative;
-
-    z-index:1;
-    background-color: rgb(51, 49, 49);
-    color: white;
-}
-
-.atend {
-   display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
-position: relative;
-width: 100%;
-
-z-index: 1;
-background-color: rgb(146, 96, 30);
-color: white;
-padding: 200px;
-gap:50px
-}
+            </div>
 
 
-.avaliacao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
+            
 
-.estrelas i {
-    color: gold;
-    font-size: 24px;
-    margin: 5px;
-    transition: transform 0.2s;
-}
-
-.avaliacao i:hover {
-  transform: scale(1.2);
-}
-
-.prod{
-
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: -800px;
-    background-color: rgb(41, 32, 22);
-    color: white;
-    border-radius: 10px;
-    padding:10px;
-    transition: 0.5s;
-}
-
-.prod:hover{
-
-    background-color: rgb(107, 8, 8);
-    color: white;
-    border: 1px solid rgb(107, 68, 68);
-    border-radius:20px;
-}
-
-.gfkj {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    position: relative;
-    z-index: 1;
-    background-color: rgb(51, 49, 49);
-    color: white;
-
-}
-
-.formsection {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr;
-}
-
-.image {
-
-    width: 70%;
-    height:auto;
-}
-
-@media (max-width: 768px){ 
-    .formsection { display: grid;
-    grid-template-columns: 1fr ;
+        </section>
     
-    }
-}
+        
+        <section class="sobre" id="sobre_nos">
 
-.formulario {
+            <div class="atend">
+                  
+                <div class="atendimento">
+                    <table>
+                        <tr>
+                            <th>Atendimento</th>
+                            <th>Horário</th>
+                        </tr>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>09:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>10:00 - 14:00</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </table>
 
-display:grid;
-grid-template-columns: 1fr 1fr;
-gap:10px;
-padding:10px;
-width: 100%;
+                </div>
 
-}
+                    <div class="atendimento">
 
-.mosaico1 {
+                        <table>
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: rgb(51, 49, 49);
-    color: white;
-}
+                            <tr>
+                                <th>Ajuda</th>
+                                <th>Telefone</th>
+                            </tr>
+                            <tr>
+                                <td>Suporte Técnico</td>
+                                <td>(11) 1234-5678</td>
+                            </tr>
+                            <tr>
+                                <td>Vendas</td>
+                                <td>(11) 9876-5432</td>
+                            </tr>
+                            <tr>
+                                <td>Atendimento ao Cliente</td>
+                                <td>(11) 5555-5555</td>
+                            </tr>
 
-.mosaico {
+                        </table>
 
-    display:grid;
-    height: 300px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-template-areas:
-    "item1 item2 item2"
-    "item1 item4 item4"
-    "item3 item5 item6";
-    background-position: center;
-    width: 300px;
-    gap:1px;
-    padding:10px;
-    max-width: 70%;
-    
-}
+                    </div>
 
-@media (max-width: 780px){
+                    <div class="atendimento">
 
-    .mosaico { display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
-    
-}
+                        <table>
 
-.item1 {
+                            <tr>
+                                <th>Entrega</th>
+                                <th>Prazo</th>
+                            </tr>
+                            <tr>
+                                <td>Capitais</td>
+                                <td>3-5 dias úteis</td>
+                            </tr>
+                            <tr>
+                                <td>Interior</td>
+                                <td>5-10 dias úteis</td>
+                            </tr>
+                            <tr>
+                                <td>Internacional</td>
+                                <td>10-20 dias úteis</td>
+                            </tr>
 
-    grid-area: item1;
-    background-image: url("../img/g1.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
+                        </table>
 
-}
+                </div>
 
-
-.item2 {
-
-    grid-area: item2;
-    background-image: url("../img/g2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.item3 {
-
-    grid-area: item3;
-    background-image: url("../img/g3.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.item4{
-
-    grid-area: item4;
-    background-image: url("../img/g4.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(255, 255, 255);
-}
-
-.item5{
-
-    grid-area: item5;
-    background-image: url("../img/g5.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-}
-
-.item6{
-
-    grid-area: item6;
-    background-image: url("../img/g6.webp");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-}
-
-.ior{
-
-    background-color: rgb(167, 0, 218);
-    position: relative;
-    top:0px;
-    left:0px;
-    width: 100px;
-    height:100px;
-    animation-name:orl;
-    animation-duration: 5s;
-    animation-fill-mode:both;
-    animation-iteration-count: infinite;
-
-}
-
-@keyframes orl {
+            </div>
 
 
-0% {background-color: brown; top:0px; left:0px;}
-15% {background-color:black; top:0px; left:550px; padding:100px ;border-radius:30px; background-color: rgb(255, 51, 0);}
-30% {background-color: rgb(255, 51, 0); top:500px; left:550px; padding:30px ;border-bottom-left-radius:300px; background-color: rgb(255, 51, 0);}
-60% {background-color: rgb(255, 51, 0); top:500px; left:0px; padding:200px ;border-radius:30px; background-color: rgb(255, 51, 0);}
-80% {background-color: rgb(255, 51, 0); top:200px; left:250px; padding:100px ;border-top-left-radius:3000px; background-color: rgb(255, 51, 0);}
-100% {background-color: brown; top:0px; left:0px;}
-}
+            <div class="avaliacao">
+                <h2> Nos Avalie</h2>
+                <p> Sua opinião é muito importante para nós! Avalie nossos produtos e serviços.</p>
+     <div class="estrelas">
+       <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+           <i class="fa-regular fa-star"></i>
+   </div>
+</div>
+
+
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+  
+        <p> 2025 LguitarL</p>
+            <p> Rua dos guitarristas, 123</p>
+            <p> Telefone: (11) 1234-5678</p>
+            <p> E-mail:lguitar@ggmail.com</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
