@@ -390,7 +390,7 @@ width: 100%;
 .item2 {
 
     grid-area: item2;
-    background-image: url("../img/g2.png");
+    background-image: url("../img/g2.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -456,3 +456,5 @@ width: 100%;
 80% {background-color: rgb(255, 51, 0); top:200px; left:250px; padding:100px ;border-top-left-radius:3000px; background-color: rgb(255, 51, 0);}
 100% {background-color: brown; top:0px; left:0px;}
 }
+
+
