@@ -1,40 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"> 
+  <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <h1>📝 Lista de Tarefas</h1>
-
-    <form id="task-form">
-      <input
-        type="text"
-        id="task-input"
-        placeholder="Digite uma tarefa e pressione Enter"
-        required
-      />
-      <button type="submit">Adicionar</button>
-    </form>
-
-    <div class="filters">
-      <button class="filter-btn active" data-filter="all">Todas</button>
-      <button class="filter-btn" data-filter="active">Ativas</button>
-      <button class="filter-btn" data-filter="completed">Concluídas</button>
+  <div class="list"> Todolist 
+    <div class="mandar">
+      <form>
+      <label for="agendar">Tarefa</label>
+      <input type="text" name="agendar" class="agendar" id="tarefa">
+      </form>
+      <button id="armazenar" class="botao"> armazenar </button>
+      <button id="mostrar" class="botao"> mostrar </button>
+      <button id="excluir" class="botao"> excluir </button>
+      <button id="adicionar" class="botao"> adicionar </button>
     </div>
-
-    <ul id="tasks"></ul>
-    <p id="empty">Nenhuma tarefa encontrada.</p>
-
-    <div class="footer">
-      <button id="clear-completed">🗑️ Limpar concluídas</button>
-      <button id="export">💾 Exportar JSON</button>
-    </div>
+     <section id="lista">...</section>
+    
   </div>
-
-  <script src="js/app.js" defer></script>
+  
+  <script src="js/app.js"></script>
 </body>
 </html>
