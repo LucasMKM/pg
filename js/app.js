@@ -22,7 +22,7 @@ function mostra() {
 }
 
 function insereTarefa() {
-  if (document.querySelector("#tarefa").value, != ""){
+  if (document.querySelector("#tarefa").value != ""){
   const novaTarefa = {
     tarefa: document.querySelector("#tarefa").value,
     responsavel: document.querySelector("#responsavel").value,
@@ -67,6 +67,7 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
+
 
 
 
