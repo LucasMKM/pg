@@ -22,6 +22,10 @@ function mostra() {
 }
 
 function insereTarefa() {
+    if (!tarefa || !responsavel || !inicio || !fim) {
+    alert("Por favor, preencha todos os campos antes de adicionar a tarefa!");
+    return;
+      
   const novaTarefa = {
     tarefa: document.querySelector("#tarefa").value,
     responsavel: document.querySelector("#responsavel").value,
@@ -65,6 +69,7 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
+
 
 
 
