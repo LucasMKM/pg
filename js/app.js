@@ -22,7 +22,6 @@ function mostra() {
 }
 
 function insereTarefa() {
-  if (document.querySelector("#tarefa").value != ""){
   const novaTarefa = {
     tarefa: document.querySelector("#tarefa").value,
     responsavel: document.querySelector("#responsavel").value,
@@ -38,7 +37,6 @@ function insereTarefa() {
   document.querySelector("#fim").value = "";
   
   mostra();
- }
 }
 function excluirTarefa(num) {
   toDoList.splice(num, 1);
@@ -67,6 +65,7 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
+
 
 
 
