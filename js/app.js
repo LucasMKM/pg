@@ -22,15 +22,21 @@ function mostra() {
 }
 
 function insereTarefa() {
-    if (!tarefa || !responsavel || !inicio || !fim) {
+  let tarefa = document.querySelector("#tarefa").value;
+  let responsavel = document.querySelector("#responsavel").value;
+  let inicio = document.querySelector("#inicio").value;
+  let fim = document.querySelector("#fim").value;
+  
+  if (!tarefa || !responsavel || !inicio || !fim) {
     alert("Por favor, preencha todos os campos antes de adicionar a tarefa!");
     return;
-      
-  const novaTarefa = {
-    tarefa: document.querySelector("#tarefa").value,
-    responsavel: document.querySelector("#responsavel").value,
-    inicio: document.querySelector("#inicio").value,
-    fim: document.querySelector("#fim").value
+  }
+  
+  let novaTarefa = {
+    tarefa: tarefa,
+    responsavel: responsavel,
+    inicio: inicio,
+    fim: fim
   };
   
   toDoList.push(novaTarefa);
@@ -42,6 +48,7 @@ function insereTarefa() {
   
   mostra();
 }
+
 function excluirTarefa(num) {
   toDoList.splice(num, 1);
   mostra();
@@ -53,7 +60,7 @@ function gravar() {
 }
 
 function recuperar() {
-  const lista = localStorage.getItem("lista");
+  let lista = localStorage.getItem("lista");
   if (lista) {
     toDoList = JSON.parse(lista);
     mostra();
@@ -69,9 +76,3 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
-
-
-
-
-
-
