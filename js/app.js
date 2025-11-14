@@ -23,18 +23,17 @@ function mostra() {
 
 function insereTarefa() {
 
-  // ---- VALIDAÇÃO PARA NÃO DEIXAR ENVIAR CAMPO VAZIO ----
-  const tarefa = document.querySelector("#tarefa").value.trim();
-  const responsavel = document.querySelector("#responsavel").value.trim();
-  const inicio = document.querySelector("#inicio").value.trim();
-  const fim = document.querySelector("#fim").value.trim();
+  let tarefa = document.querySelector("#tarefa").value.trim();
+  let responsavel = document.querySelector("#responsavel").value.trim();
+  let inicio = document.querySelector("#inicio").value.trim();
+  let fim = document.querySelector("#fim").value.trim();
 
   if (tarefa === "" || responsavel === "" || inicio === "" || fim === "") {
     alert("Preencha todos os campos antes de adicionar a tarefa!");
     return; // impede o envio
   }
 
-  const novaTarefa = {
+  let novaTarefa = {
     tarefa,
     responsavel,
     inicio,
@@ -79,3 +78,4 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
+
