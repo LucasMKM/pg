@@ -42,7 +42,6 @@ function insereTarefa() {
   
   toDoList.push(novaTarefa);
   
-  // Limpa os campos após adicionar
   document.querySelector("#tarefa").value = "";
   document.querySelector("#responsavel").value = "";
   document.querySelector("#inicio").value = "";
@@ -78,4 +77,5 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
+
 
