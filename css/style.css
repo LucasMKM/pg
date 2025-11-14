@@ -55,3 +55,18 @@ background-color: rgb(25, 11, 32);
 border-style:none;
 
 }
+
+.padrao{
+
+color:white;
+background-color: rgb(25, 11, 32);
+border-style:none;
+
+
+}
+
+.lor{
+display:flex;
+flex-direction: column;
+
+}
