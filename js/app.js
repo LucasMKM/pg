@@ -22,26 +22,16 @@ function mostra() {
 }
 
 function insereTarefa() {
-
-  let tarefa = document.querySelector("#tarefa").value.trim();
-  let responsavel = document.querySelector("#responsavel").value.trim();
-  let inicio = document.querySelector("#inicio").value.trim();
-  let fim = document.querySelector("#fim").value.trim();
-
-  if (tarefa === "" || responsavel === "" || inicio === "" || fim === "") {
-    alert("Preencha todos os campos antes de adicionar a tarefa!");
-    return; // impede o envio
-  }
-
-  let novaTarefa = {
-    tarefa,
-    responsavel,
-    inicio,
-    fim
+  const novaTarefa = {
+    tarefa: document.querySelector("#tarefa").value,
+    responsavel: document.querySelector("#responsavel").value,
+    inicio: document.querySelector("#inicio").value,
+    fim: document.querySelector("#fim").value
   };
   
   toDoList.push(novaTarefa);
   
+  // Limpa os campos após adicionar
   document.querySelector("#tarefa").value = "";
   document.querySelector("#responsavel").value = "";
   document.querySelector("#inicio").value = "";
@@ -77,5 +67,4 @@ function limpar() {
   mostra();
   alert("Lista limpa com sucesso!");
 }
-
 
