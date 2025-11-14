@@ -9,10 +9,16 @@
 <body>
   <div class="list"> Todolist 
     <div class="mandar">
-      <form>
+      <form class="lor">
+      <label for="responsavel">nome</label>
+      <input type="text" name="responsavel" class="padrao" id="responsavel">
       <label for="agendar">Tarefa</label>
-      <input type="text" name="agendar" class="agendar" id="tarefa">
-      </form>
+      <input type="text" name="agendar" class="padrao" id="tarefa" id="padrao">
+      <label for="agendar">inicio</label>
+      <input type="date" name="agendar" class="padrao" id="inicio">
+      <label for="agendar">fim</label>
+      <input type="date" nome="agender" class="padrao" id="fim">
+       </form>
       <button id="armazenar" class="botao"> armazenar </button>
       <button id="mostrar" class="botao"> mostrar </button>
       <button id="excluir" class="botao"> excluir </button>
@@ -22,6 +28,6 @@
     
   </div>
   
-  <script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
