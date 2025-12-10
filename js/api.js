@@ -34,7 +34,7 @@ async function enviarc() {
     let asd = Object.keys(pok);
 
     asd.forEach(element => {
-      document.querySelector('#ceprespostad').innerHTML += `<strong>${element}:</strong> ${pok[element]}<br>`;
+      document.querySelector('#ceprespostac').innerHTML += `<strong>${element}:</strong> ${pok[element]}<br>`;
     });
 
   } catch(erro) {
@@ -137,3 +137,4 @@ async function enviarfe() {
     document.querySelector('#ceprespostaa').innerHTML = '❌ Ano inválido, digite novamente';
   }
 }
+
