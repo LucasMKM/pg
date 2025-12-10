@@ -138,3 +138,51 @@ async function enviarfe() {
   }
 }
 
+// ==================== CÓDIGO DE MARCAS ====================
+
+
+document.querySelector("#carro").addEventListener('click', removerm);
+document.querySelector('#enviar_marca').addEventListener('click', enviarm);
+
+let contadorm = -1;
+
+function removerm() {
+  if (contadorm < 0) {
+    contadorm++;
+    document.querySelector("#carro").value = "";
+  }
+}
+
+async function enviarm() {
+  document.querySelector('#ceprespostam').innerHTML = '';
+   
+  try {
+    if (Number.isInteger(parseInt(document.querySelector("#carro").value))) {
+    } else {
+      document.querySelector('#ceprespostam').innerHTML = '⚠️ Apenas números';
+      return;
+    }
+
+    let api = `https://brasilapi.com.br/api/fipe/preco/v1/${document.querySelector("#carro").value}`;
+ 
+    if (document.querySelector("#carro").value.length != 7) {
+      document.querySelector('#ceprespostam').innerHTML = "⚠️ Coloque exatamente 7 números";
+      return;
+    }
+
+    let as = await fetch(api);
+    let pok = await as.json();
+
+    // Itera sobre cada ano/modelo retornado
+    pok.forEach(veiculo => {
+      let asd = Object.keys(veiculo);
+      document.querySelector('#ceprespostam').innerHTML += '<hr>';
+      asd.forEach(element => {
+        document.querySelector('#ceprespostam').innerHTML += `<strong>${element}:</strong> ${veiculo[element]}<br>`;
+      });
+    });
+
+  } catch(erro) {
+    document.querySelector('#ceprespostam').innerHTML = '❌ Código FIPE inválido, digite novamente';
+  }
+}
